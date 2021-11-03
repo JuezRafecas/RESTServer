@@ -23,3 +23,18 @@ Tenemos que tenerlo habilitarlo, sino los navegadores tiran error
 npm i cors
 const cors = require('cors');
 app.use(cors());
+
+# Mongoose
+
+Conectar nuestra app con Atlas en la nube
+Es un ODM (Object Data Modeling)
+Nos facilita el manejo con mongo desde el codigo
+
+# bcryptJS
+
+Encripta contrasenas
+
+# express-validator
+
+Es una gran coleccion de Middlewares
+Para validar campos como email
