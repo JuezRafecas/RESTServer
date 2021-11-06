@@ -31,7 +31,7 @@ const usuarioPost = async(req, res = response) => {
     //Guardar en DB
     await usuario.save();
 
-    res.json({usuario});
+    res.json(usuario);
 };
 const usuarioPut = async(req, res = response) => {
 
@@ -45,17 +45,16 @@ const usuarioPut = async(req, res = response) => {
         resto.password = bcryptjs.hashSync(password, salt);
     }
     const usuario = await Usuario.findByIdAndUpdate(id, resto);
-    res.json({usuario});
+    res.json(usuario);
 };
 const usuarioDelete = async(req, res = response) => {
 
     const { id } = req.params;
 
-    //Fisicamente lo borramos
     const usuario = await Usuario.findByIdAndUpdate( id, {estado: false} );
-
-    res.json({usuario});
+    res.json(usuario);
 };
+
 const usuarioPatch = (req, res = response) => {
     res.json({
         msg: 'patch API desde el controlador'});

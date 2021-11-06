@@ -38,3 +38,7 @@ Encripta contrasenas
 
 Es una gran coleccion de Middlewares
 Para validar campos como email
+
+# JWT
+
+```npm i jsonwebtoken```
