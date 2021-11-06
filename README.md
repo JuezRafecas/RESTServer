@@ -54,3 +54,11 @@ Si le agrego --tail, tengo la info en tiempo real de los logs
 # Google Sing In
 
 ```npm install google-auth-library --save```
+
+# Manejo de archivos
+
+```npm install express-fileupload```
+
+# Cloudinary para hosting de imagenes
+
+```npm i cloudinary```
