@@ -42,3 +42,15 @@ Para validar campos como email
 # JWT
 
 ```npm i jsonwebtoken```
+
+# Heroku
+
+```git push heroku main```
+```heroku config:set ALGO=ALGOKEY```
+```heroku logs -n 1000```
+
+Si le agrego --tail, tengo la info en tiempo real de los logs
+
+# Google Sing In
+
+```npm install google-auth-library --save```
